@@ -1,0 +1,34 @@
+{
+	"name": "redux-saga-retry",
+	"version": "0.0.1",
+	"description": "Retry your redux sagas with zero-config",
+	"author": "AMARO Fashion <tech@amaro.com>",
+	"contributors": [
+		{
+			"name": "Carlos Schneider",
+			"email": "carlosaschjr@gmail.com"
+		},
+		{
+			"name": "Gil Barbara",
+			"email": "gil.barbara@amaro.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/amarofashion/redux-saga-retry.git"
+	},
+	"bugs": {
+		"url": "https://github.com/amarofashion/redux-saga-retry/issues"
+	},
+	"homepage": "https://github.com/amarofashion/redux-saga-retry#readme",
+	"license": "MIT",
+	"sideEffects": false,
+	"keywords": [
+		"react",
+		"redux",
+		"redux-saga",
+		"retry"
+	],
+  "dependencies": {},
+  "devDependencies": {}
+}
