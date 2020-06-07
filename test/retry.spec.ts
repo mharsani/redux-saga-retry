@@ -3,7 +3,7 @@ import { call, put } from 'redux-saga/effects';
 import { expectSaga } from 'redux-saga-test-plan';
 import { retry } from '../src/retry';
 
-jest.mock('../src/backoff-functions', () => ({
+jest.mock('../src/backoff', () => ({
   exponentialGrowth: () => 0,
 }));
 
@@ -45,6 +45,17 @@ function stopConditionValidator(value: any) {
 }
 
 describe('retry', () => {
+  beforeEach(() => {
+    jest.spyOn(console, 'error');
+    // @ts-ignore
+    global.console.error.mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    // @ts-ignore
+    global.console.error.mockRestore();
+  });
+
   const action = { payload: { key: 'value' }, type: 'DUMMY_REQUEST' };
   const expectedArgs = [
     'https://example.com',
