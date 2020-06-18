@@ -9,5 +9,6 @@ export type ConditionFunction = (v: unknown) => boolean;
 export interface RetryGeneratorOptions {
   backoff?: (attempt: number) => number;
   condition?: RegExp | ConditionFunction;
-  defaultMax?: number;
+  debug?: boolean;
+  retries?: number;
 }
