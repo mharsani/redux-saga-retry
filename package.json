@@ -1,6 +1,6 @@
 {
   "name": "redux-saga-retry",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Retry your redux sagas with zero-config",
   "author": "AMARO Fashion <tech@amaro.com>",
   "contributors": [
